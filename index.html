@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crypto Market Data</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      padding: 8px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>Crypto Market Data</h1>
+  <input type="text" id="searchInput" placeholder="Search..." oninput="filterTable()">
+  <button onclick="sortTable('marketCap')">Sort by Market Cap</button>
+  <button onclick="sortTable('percentageChange')">Sort by Percentage Change</button>
+  <br><br>
+  <table id="dataTable"></table>
+
+  <script src="script.js"></script>
+</body>
+</html>
